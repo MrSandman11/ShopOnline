@@ -66,7 +66,7 @@ fieldset {
 
 @media (max-width: 1540px) {
   .container {
-    max-width: 1024px;
+    max-width: 1540px;
     padding: 0 42px;
   }
 }

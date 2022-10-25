@@ -201,15 +201,14 @@
   }
   
   .promo__container {
-    height: 1318px;
+    height: 1290px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 205px);
+    grid-template-rows: 202px 194px 194px 194px 418px;
     grid-template-areas: 
     "book time present present"
     "shoe shoe present present"
     "idea idea dress chemistry"
     "december december dress balls"
-    "decorations decorations decorations decorations"
     "decorations decorations decorations decorations";
     gap: 22px 30px;
   }
@@ -232,6 +231,10 @@
   
   .promo__item:nth-child(6) {
     padding: 119px 0 0 30px;
+  }
+
+  .promo__item:nth-child(8) {
+    background: url('../img/dress.jpg') top center/cover no-repeat;
   }
   
   .promo__item:nth-child(9) {
@@ -353,6 +356,10 @@
   
   .promo__item:nth-child(6) {
     padding: 87px 0 0 21px;
+  }
+
+  .promo__item:nth-child(8) {
+    background: url('../img/dress.jpg') top center/cover no-repeat;
   }
   
   .promo__item:nth-child(9) {
