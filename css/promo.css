@@ -1,0 +1,553 @@
+.promo {
+  padding: 30px 0 91px;
+}
+
+.promo__container {
+  height: 1092px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 228px);
+  grid-template-areas: 
+  "book time present present idea idea"
+  "shoe shoe present present december december"
+  "decorations decorations decorations decorations dress chemistry"
+  "decorations decorations decorations decorations dress balls";
+  gap: 60px;
+}
+
+.promo__item {
+  position: relative;
+  border-radius: 20px;
+}
+
+.promo__item:nth-child(1) {
+  grid-area: book;
+  background: url('../img/book.jpg') center center/cover no-repeat;
+  padding: 80px 0 0 20px;
+}
+
+.promo__item:nth-child(2) {
+  grid-area: time;
+  background: url('../img/time.jpg') center center/cover no-repeat;
+  padding: 67px 0 0 14px;
+}
+
+.promo__item:nth-child(3) {
+  grid-area: present;
+  background: url('../img/present.jpg') center center/cover no-repeat;
+}
+
+.promo__item:nth-child(4) {
+  grid-area: idea;
+  background: url('../img/idea.jpg') center center/cover no-repeat;
+  padding: 94px 10px 0 30px;
+}
+
+.promo__item:nth-child(5) {
+  grid-area: shoe;
+  background: url('../img/shoe.jpg') center center/cover no-repeat;
+}
+
+.promo__item:nth-child(6) {
+  grid-area: december;
+  background: url('../img/december.jpg') center center/cover no-repeat;
+  padding: 136px 0 0 30px;
+}
+
+.promo__item:nth-child(7) {
+  grid-area: decorations;
+  background: url('../img/decorations.jpg') center center/cover no-repeat;
+}
+
+.promo__item:nth-child(8) {
+  grid-area: dress;
+  background: url('../img/dress.jpg') center center/cover no-repeat;
+}
+
+.promo__item:nth-child(9) {
+  grid-area: chemistry;
+  background: url('../img/chemistry.jpg') center center/cover no-repeat;
+  padding: 130px 0 0 20px;
+}
+
+.promo__item:nth-child(10) {
+  grid-area: balls;
+  background: url('../img/balls.jpg') center center/cover no-repeat;
+}
+
+.promo__book-text {
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.promo__book-text_bold {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.promo__time-text {
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.discount {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: #FFBD13;
+}
+
+.discount__value {
+  font-weight: 700;
+  line-height: 130%;
+  text-align: center;
+  padding-top: 24px;
+}
+
+.discount_time, .discount_december, .discount_dress {
+  right: 20px;
+  bottom: 20px;
+}
+
+.discount_shoe, .discount_chemistry {
+  left: 20px;
+  top: 20px;
+}
+
+.promo__present-text-block {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 24px 26px;
+  width: calc(100% - 40px);
+  height: 167px;
+  background-color: #38C0EB;
+  border-radius: 20px;
+}
+
+.promo__present-text {
+  font-size: 40px;
+  line-height: 120%;
+}
+
+.promo__present-text_bold {
+  font-size: 56px;
+  line-height: 67.2px;
+  font-weight: 700;
+}
+
+.promo__idea-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+}
+
+.promo__december-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+}
+
+.promo__decorations-text-block {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  padding: 30px 40px;
+  width: 643px;
+  height: 108px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.promo__decorations-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #F91155;
+}
+
+.promo__chemistry-text {
+  font-weight: 700;
+  line-height: 130%;
+}
+
+@media (max-width: 1880px) {
+  .promo__present-text-block {
+    padding: 24px 27px 32px 25px;
+  }
+
+  .promo__present-text {
+    font-size: 30px;
+  }
+  .promo__present-text_bold {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .promo__december-text {
+    font-size: 30px;
+  }
+
+  .promo__time-text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1540px) {
+  .promo {
+    padding: 25px 0 92px;
+  }
+  
+  .promo__container {
+    height: 1318px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 205px);
+    grid-template-areas: 
+    "book time present present"
+    "shoe shoe present present"
+    "idea idea dress chemistry"
+    "december december dress balls"
+    "decorations decorations decorations decorations"
+    "decorations decorations decorations decorations";
+    gap: 22px 30px;
+  }
+  
+  .promo__item {
+    border-radius: 16px;
+  }
+  
+  .promo__item:nth-child(1) {
+    padding: 101px 0 0 13px;
+  }
+  
+  .promo__item:nth-child(2) {
+    padding: 54px 0 0 14px;
+  }
+  
+  .promo__item:nth-child(4) {
+    padding: 89px 30px 0 30px;
+  }
+  
+  .promo__item:nth-child(6) {
+    padding: 119px 0 0 30px;
+  }
+  
+  .promo__item:nth-child(9) {
+    padding: 151px 0 0 10px;
+  }
+  
+  .promo__book-text {
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+  
+  .promo__book-text_bold {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  
+  .discount_time, .discount_december, .discount_dress {
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  .discount_shoe, .discount_chemistry {
+    left: 10px;
+    top: 10px;
+  }
+  
+  .promo__idea-text {
+    font-size: 30px;
+  }
+
+  .promo__present-text-block {
+    height: 143px;
+  }
+  
+  .promo__decorations-text-block {
+    left: 30px;
+    bottom: 39px;
+    padding: 24px 46px 23px 47px;
+    width: 513px;
+    height: 83px;
+    border-radius: 16px;
+  }
+  
+  .promo__decorations-text {
+    font-size: 30px;
+  }
+  
+  .promo__chemistry-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .promo__present-text {
+    font-size: 16px;
+    line-height: 110%;
+  }
+
+  .promo__present-text_bold {
+    font-size: 26px;
+    line-height: 28.6px;
+  }
+
+  .promo__december-text {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .promo__time-text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .promo__book-text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .promo__book-text_bold {
+    font-size: 26px;
+    line-height: 28.6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo {
+    padding: 20px 0 65px;
+  }
+  
+  .promo__container {
+    height: 933px;
+    grid-template-columns: minmax(50px,140px) minmax(50px,140px) minmax(50px, 182px) minmax(50px,178px);
+    grid-template-rows: 130px 126px 126px 126px 337px;
+    grid-template-areas: 
+    "book time present present"
+    "shoe shoe present present"
+    "idea idea dress chemistry"
+    "december december dress balls"
+    "decorations decorations decorations decorations";
+    gap: 22px 20px;
+  }
+  
+  .promo__item {
+    border-radius: 12px;
+  }
+  
+  .promo__item:nth-child(1) {
+    padding: 43px 0 0 10px;
+  }
+  
+  .promo__item:nth-child(2) {
+    padding: 15px 0 0 15px;
+  }
+  
+  .promo__item:nth-child(4) {
+    padding: 70px 73px 0 21px;
+  }
+
+  
+  .promo__item:nth-child(6) {
+    padding: 87px 0 0 21px;
+  }
+  
+  .promo__item:nth-child(9) {
+    padding: 94px 0 0 15px;
+  }
+  
+  .discount {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .discount__value {
+    padding-top: 16px;
+    font-size: 16px;
+  }
+  
+  .promo__present-text-block {
+    bottom: 10px;
+    left: 10px;
+    padding: 12px 20px;
+    width: calc(100% - 20px);
+    height: 61px;
+    border-radius: 12px;
+  }
+
+  .promo__time-text {
+    font-size: 16px;
+    line-height: 130%;
+  }
+  
+  .promo__idea-text {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  
+  .promo__decorations-text-block {
+    left: 26px;
+    bottom: 26px;
+    padding: 22px 33px;
+    width: 347px;
+    height: 68px;
+    border-radius: 12px;
+  }
+  
+  .promo__decorations-text {
+    font-size: 20px;
+  }
+  
+  .promo__chemistry-text {
+    font-size: 16px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 752px) {
+  .promo__present-text {
+    font-size: 12px;
+    line-height: 13.2px;
+  }
+
+  .promo__present-text_bold {
+    font-size: 16px;
+    line-height: 17.6px;
+  }
+
+  .promo__chemistry-text {
+    font-size: 12px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 555px) {
+  .promo__december-text {
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  .promo__idea-text {
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  .promo__book-text {
+    font-size: 12px;
+    line-height: 13.2px;
+  }
+  
+  .promo__book-text_bold {
+    font-size: 16px;
+    line-height: 17.6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo {
+    padding: 10px 0 43px;
+  }
+  
+  .promo__container {
+    height: 1132px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 120px 118px 206px 118px 118px 95px 94px 123px;
+    grid-template-areas: 
+    "book time"
+    "shoe shoe"
+    "present present"
+    "idea idea"
+    "december december"
+    "dress chemistry"
+    "dress balls"
+    "decorations decorations";
+    gap: 20px;
+  }
+  
+  .promo__item {
+    border-radius: 8px;
+  }
+  
+  .promo__item:nth-child(1) {
+    padding: 66px 0 0 10px;
+  }
+  
+  .promo__item:nth-child(2) {
+    padding: 18px 0 0 10px;
+  }
+  
+  .promo__item:nth-child(4) {
+    padding: 88px 0 0 10px;
+  }
+  
+  .promo__item:nth-child(6) {
+    padding: 88px 0 0 10px;
+  }
+  
+  .promo__item:nth-child(9) {
+    padding: 70px 0 0 9px;
+  }
+  
+  .promo__time-text {
+    font-size: 12px;
+  }
+  
+  .discount {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .discount__value {
+    padding-top: 16px;
+  }
+  
+  .discount_time, .discount_december, .discount_dress {
+    right: 5px;
+    bottom: 5px;
+  }
+  
+  .discount_shoe, .discount_chemistry {
+    left: 5px;
+    top: 5px;
+  }
+  
+  .promo__present-text-block {
+    bottom: 10px;
+    left: 10px;
+    padding: 7px 25px;
+    width: calc(100% - 20px);
+    height: 36px;
+    border-radius: 8px;
+  }
+  
+  .promo__present-text {
+    font-size: 12px;
+    line-height: 110%;
+  }
+  
+  .promo__present-text_bold {
+    font-size: 16px;
+    line-height: 17.6px;
+  }
+  
+  .promo__decorations-text-block {
+    left: 15px;
+    bottom: 10px;
+    padding: 7px 41px;
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+  }
+  
+  .promo__decorations-text {
+    font-size: 12px;
+  }
+  
+  .promo__chemistry-text {
+    font-size: 12px;
+    line-height: 120%;
+  }
+}

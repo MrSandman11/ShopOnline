@@ -1,0 +1,189 @@
+.banner {
+  padding: 45px 0 30px;
+}
+
+.banner__container {
+  display: block;
+  height: 480px;
+  width: 100%;
+  background: url('../img/banner.jpg') center center/cover no-repeat;
+  padding: 145px 0 40px;
+  border-radius: 20px;
+}
+
+.banner__discount {
+  margin-bottom: 100px;
+  padding-left: 112px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 130%;
+}
+
+.banner__timer {
+  text-align: center;
+  width: 473px;
+  margin: 0 auto;
+}
+
+.banner__timer-text {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.banner__timer-time {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.banner__timer_days, .banner__timer_hours, .banner__timer_minutes {
+  display: flex;
+  gap: 6px;
+}
+
+.banner__timer_days-count, .banner__timer_hours-count, .banner__timer_minutes-count {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 130%;
+}
+
+.banner__timer_days-descr, .banner__timer_hours-descr, .banner__timer_minutes-descr {
+  align-self: flex-end;
+  padding-bottom: 9px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+}
+
+@media (max-width: 1540px) {
+  .banner {
+    padding: 30px 0 25px;
+  }
+  
+  .banner__container {
+    height: 314px;
+    width: 100%;
+    background: url('../img/banner.jpg') center center/cover no-repeat;
+    padding: 80px 0 36px;
+    border-radius: 16px;
+  }
+  
+  .banner__discount {
+    margin-bottom: 63px;
+    padding-left: 80px;
+    font-size: 40px;
+  }
+  
+  .banner__timer {
+    width: 314px;
+  }
+  
+  .banner__timer-text {
+    margin-bottom: 10px;
+  }
+  
+  .banner__timer-time {
+    gap: 20px;
+  }
+  
+  .banner__timer_days, .banner__timer_hours, .banner__timer_minutes {
+    gap: 5px;
+  }
+  
+  .banner__timer_days-count, .banner__timer_hours-count, .banner__timer_minutes-count {
+    font-size: 40px;
+  }
+  
+  .banner__timer_days-descr, .banner__timer_hours-descr, .banner__timer_minutes-descr {
+    padding-bottom: 6px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 25px 0 20px;
+  }
+  
+  .banner__container {
+    height: 280px;
+    padding: 64px 0 30px;
+    border-radius: 16px;
+  }
+  
+  .banner__discount {
+    margin-bottom: 82px;
+    font-size: 30px;
+  }
+  
+  .banner__timer {
+    width: 229px;
+  }
+  
+  .banner__timer-text {
+    font-size: 12px;
+  }
+  
+  .banner__timer-time {
+    gap: 10px;
+  }
+  
+  .banner__timer_days, .banner__timer_hours, .banner__timer_minutes {
+    gap: 3px;
+  }
+  
+  .banner__timer_days-count, .banner__timer_hours-count, .banner__timer_minutes-count {
+    font-size: 30px;
+  }
+  
+  .banner__timer_days-descr, .banner__timer_hours-descr, .banner__timer_minutes-descr {
+    padding-bottom: 3px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 20.5px 0 10px;
+  }
+  
+  .banner__container {
+    height: 340px;
+    padding: 50px 0 30px;
+    border-radius: 8px;
+  }
+  
+  .banner__discount {
+    margin-bottom: 189px;
+    padding-left: 29px;
+    font-size: 22px;
+  }
+  
+  .banner__timer {
+    width: 167px;
+  }
+  
+  .banner__timer-text {
+    margin-bottom: 6px;
+    font-size: 8px;
+  }
+  
+  .banner__timer-time {
+    gap: 8px;
+  }
+  
+  .banner__timer_days, .banner__timer_hours, .banner__timer_minutes {
+    gap: 2px;
+  }
+  
+  .banner__timer_days-count, .banner__timer_hours-count, .banner__timer_minutes-count {
+    font-size: 20px;
+  }
+  
+  .banner__timer_days-descr, .banner__timer_hours-descr, .banner__timer_minutes-descr {
+    padding-bottom: 5px;
+    font-size: 12px;
+  }
+}
