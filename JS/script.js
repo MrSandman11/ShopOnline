@@ -72,12 +72,15 @@ const timer = (deadline, createTimer) => {
     const dateNow = Date.now();
     const timeRemaining = dateStop - dateNow;
 
-    let seconds = Math.floor(timeRemaining / 1000 / 60 / 60 % 60);
+    let seconds = Math.floor(timeRemaining / 1000 % 60);
     let minutes = Math.floor(timeRemaining / 1000 / 60 % 60);
     let hours = Math.floor(timeRemaining / 1000 / 60 / 60 % 24);
     const days = Math.floor(timeRemaining / 1000 / 60 / 60 / 24);
 
     if (hours < 10) hours = `0${hours}`;
+    if (hours < 1) {
+      hours = '';
+    }
     if (minutes < 10) minutes = `0${minutes}`;
     if (seconds < 10) seconds = `0${seconds}`;
 
@@ -89,12 +92,17 @@ const timer = (deadline, createTimer) => {
 
     const DayTimestamp = new Date(24 * 60 * 60 * 1000) - new Date(0);
     if (timer.timeRemaining <= DayTimestamp) {
-      console.log(dayCount);
       dayCount.textContent = timer.hours;
       hoursCount.textContent = timer.minutes;
       minutesCount.textContent = timer.seconds;
-      dayDescr.textContent =
-      declOfNum(timer.hours, ['час', 'часа', 'часов']);
+
+      if (timer.hours < 1) {
+        dayDescr.textContent = '';
+      } else {
+        dayDescr.textContent =
+        declOfNum(timer.hours, ['час', 'часа', 'часов']);
+      }
+
       hoursDescr.textContent =
       declOfNum(timer.minutes, ['минута', 'минуты', 'минут']);
       minutesDescr.textContent =
@@ -111,7 +119,11 @@ const timer = (deadline, createTimer) => {
       declOfNum(timer.minutes, ['минута', 'минуты', 'минут']);
     }
 
-    const intervalId = setTimeout(start, 60000);
+    let intervalId = setTimeout(start, 60000);
+    if (timer.timeRemaining <= DayTimestamp) {
+      clearInterval(intervalId);
+      intervalId = setTimeout(start, 1000);
+    }
 
     if (timer.timeRemaining <= 0) {
       clearTimeout(intervalId);
